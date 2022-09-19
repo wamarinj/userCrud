@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+    margin: 0 auto;
+    width: 250px;
+    height: 100vh;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    padding: 7px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background: #e6e0e0;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.userList {
+    width: 60%;
+    background-color: #6a9eda;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.userIntro {
+    width: 40%;
+    background-color: #5086c1;
+    color: #dcffff;
+}
+
+.userIntro h1 {
+    margin-top: 4rem;
+}
+
+.userCard ul {
+    list-style: none;
+}
+
+.userCard ul li {
+    background-color: #e4fbfb;
+    width: 500px;
+    height: 140px;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 1rem 0;
+    color: #5086c1;
+    box-shadow: 6px 6px;
+}
+
+.userCard button {
+    box-shadow: 3px 3px #5086c1;
+    font-size: 12px;
+}
+
+@media (max-width: 992px){
+    .App{
+        display: flex;
+        flex-direction: column;        
+    }
+    form{
+        height: 500px;
+    }
+    form h1{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .userIntro {
+        width: 100%;
+    }
+    .userList {
+        width: 100%;
+        
+    }
+}
